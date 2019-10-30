@@ -1,0 +1,27 @@
+ <!-- Each button when selected changes the state of the todo item.
+To do this create a member function that binds to the button click event
+passing the todo item as one parameter. The function should update the
+dueDate property of the todo-item class associated with the object. --> 
+
+<div class="tasks">
+    <p class = "header"><b><u>Current tasks</u></b></p>
+    <p *ngFor="let task of tasks"> Task ID: {{task.id}} <br> Task: {{task.description}}    
+    
+    <br><br>
+    <i>due date: </i>
+    <button class = "button" (click) = 
+    "buttonClickedUrgent(this.task)"
+    [ngClass]="{'is-Clicked1' : task.dueDate == 'urgent'}"> Urgent </button>
+    <button class = "button" (click) = 
+    "buttonClickedDays(this.task)"
+    [ngClass]="{'is-Clicked2' : task.dueDate == 'days'}" > Days </button>
+    <button class = "button" (click) = 
+    "buttonClickedWeek(this.task)"
+    [ngClass]="{'is-Clicked3' : task.dueDate == 'week'}" > Week </button> 
+                                    
+    </p>
+</div>  
+
+
+
+

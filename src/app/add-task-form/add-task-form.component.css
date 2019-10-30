@@ -1,0 +1,38 @@
+.container {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+}
+
+.tasks {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(17, 54, 75);
+  font-size: 20px;
+}
+
+.button {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:200;    
+  text-align:center;
+  transition: all 0.2s;
+}
+
+.is-Clicked1 {
+  background-color: red;
+}
+
+.is-Clicked2 {
+  background-color: yellow;
+}
+
+.is-Clicked3 {
+  background-color: green;
+}

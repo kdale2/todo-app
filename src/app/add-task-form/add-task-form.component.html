@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>Add a task</h1>
+      <div class="formFormat">
+        <label for="id">task id: </label>
+        <input type="text" #taskIDinput class="form-control" name = "id" #spy>
+      </div>
+
+      <div class="formFormat">
+        <label for="description">task description: </label>
+        <input type="text" #taskInput class="form-control" id="description" #spy>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-success" (click)='addTask(taskInput.value, taskIDinput.value)'>
+        Add to List</button>
+  </div>
+
+<br>
+<div>
+    <p class = "header"><b><u>New task list: </u></b></p>
+    <p class = "tasks" *ngFor="let task of newTasks"> Task ID: {{task.id}} <br> Task: {{task.description}}    
+
+      <br><br>
+      <i>due date: </i>
+      <button class = "button" (click) = 
+      "buttonClickedUrgent(this.task)"
+      [ngClass]="{'is-Clicked1' : task.dueDate == 'urgent'}"> Urgent </button>
+      <button class = "button" (click) = 
+      "buttonClickedDays(this.task)"
+      [ngClass]="{'is-Clicked2' : task.dueDate == 'days'}" > Days </button>
+      <button class = "button" (click) = 
+      "buttonClickedWeek(this.task)"
+      [ngClass]="{'is-Clicked3' : task.dueDate == 'week'}" > Week </button> 
+    </p>
+</div>
