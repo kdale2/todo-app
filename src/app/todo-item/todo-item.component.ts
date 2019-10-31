@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './todo-item.component.html',
   styleUrls: ['./todo-item.component.css']
 })
+
 export class TodoItemComponent implements OnInit {
 
   id: String;

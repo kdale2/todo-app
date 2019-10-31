@@ -6,4 +6,8 @@ To-do list application that holds a list of items to be completed.<br>
 2. Each item can be labeled as urgent, to be completed within days, or weeks<br>
 3. When pressing a button to denote urgency, button changes color.<br>
 4. Component at top of page allows you to add more items to a new todo list.
+<br><br>
+Note:<br>
+used http-server dist/ to run dist file but cannot view properly in browser<br>
+followed firebase article multiple times but could not get firebase app running
 
