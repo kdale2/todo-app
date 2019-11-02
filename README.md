@@ -9,3 +9,4 @@ To-do list application that holds a list of items to be completed.<br>
 <br><br>
 Note:<br>
 used http-server dist/ to run dist file but cannot view properly in browser<br>
+deployed with firebase: https://todoapp-9af2f.firebaseapp.com/dashboard
