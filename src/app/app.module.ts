@@ -9,7 +9,10 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NewTodoItemComponent } from './new-todo-item/new-todo-item.component';
 import { AddTaskFormComponent } from './add-task-form/add-task-form.component';
-
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { AddTaskFormComponent } from './add-task-form/add-task-form.component';
     TodoListComponent,
     PageNotFoundComponent,
     NewTodoItemComponent,
-    AddTaskFormComponent
+    AddTaskFormComponent,
+    NavbarComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

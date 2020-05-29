@@ -28,6 +28,8 @@ export class AddTaskFormComponent implements OnInit {
     alert("Adding task to list!");
     this.newTasks = this.todoService.addNewTask(new NewTodoItemComponent(IDinput, formInput));
 
+    
+
   }
 
   buttonClickedUrgent(task: NewTodoItemComponent) {

@@ -46,6 +46,8 @@ populateList(): NewTodoItemComponent[] {
 addNewTask(task: NewTodoItemComponent): NewTodoItemComponent[] {
     this.newTasks.push(task);
     return this.newTasks;
+
+    
   }
 }
 

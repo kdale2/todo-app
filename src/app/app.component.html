@@ -1,19 +1,23 @@
+<!-- <app-navbar></app-navbar> -->
+
 <router-outlet>
-
-<h1 class = 'nav'>Navigation Bar</h1>
+<h1>To-Do List App</h1>
 <nav class ='nav'>
+  <span>
+    <a routerLink = "/home-page" routerLinkActive = "active" class= "button">HomePage</a>
+    </span>  
 
   <span>
-    <a routerLink = "/dashboard" routerLinkActive = "active" class = "button">Dashboard</a>
-  </span>
+    <a routerLink = "/dashboard" routerLinkActive = "active" class = "button">To-Do List</a>
+  </span>  
 
+  <!-- this is not set up yet -->
   <span>
-  <a routerLink = "/page-not-found" routerLinkActive = "active" class= "button">Page Not Found</a>
+    <a routerLink = "/page-not-found" routerLinkActive = "active" class= "button">Login/Logout</a>
   </span>
   <br>
 </nav>
-
-</router-outlet>
+</router-outlet> 
 
 
 

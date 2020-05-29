@@ -8,18 +8,27 @@
     font: bold 14px Arial;
     text-decoration: none;
     background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 4px 2px 4px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+    color: #1d2361;
+    padding: 4px 8px 4px 8px;
+    border-top: 4px solid #CCCCCC;
+    border-right: 4px solid #333333;
+    border-bottom: 4px solid #333333;
+    border-left: 4px solid #CCCCCC;
   }
 
   span:before{
     content:" "; 
     display:inline-block; 
     width:16px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: left;
+  margin: 0;
+  padding: 20px 0;    
+  color: #50aa94;
+  text-shadow: 3px 3px 1px #214547;
 }
 
 
