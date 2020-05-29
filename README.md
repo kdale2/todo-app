@@ -8,6 +8,5 @@ To-do list application that holds a list of items to be completed.<br>
 4. Component at top of page allows you to add more items to a new todo list.
 <br><br>
 Note:<br>
-used http-server dist/ to run dist file but cannot view properly in browser<br>
-followed firebase article multiple times but could not get firebase app running
-
+--used http-server dist/ to run dist file but cannot view properly in browser<br>
+--deployed with firebase: https://todoapp-9af2f.firebaseapp.com/dashboard
